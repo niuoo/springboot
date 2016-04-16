@@ -4,7 +4,18 @@ package com.sneakerhead.boot.module;
  * Created by wanghuiwu on 2016/3/29.
  */
 public class User {
+    private Long id;
     private String name;
+    private String phone;
+
+    public User() {
+    }
+
+    public User(Long id, String name, String phone) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+    }
 
     public String getName() {
         return name;
@@ -22,5 +33,11 @@ public class User {
         this.phone = phone;
     }
 
-    private String phone;
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

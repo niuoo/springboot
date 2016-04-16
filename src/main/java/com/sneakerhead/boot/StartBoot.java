@@ -17,6 +17,7 @@ import java.util.Set;
 public class StartBoot {
     public static void main(String args[]){
         SpringApplication application = new SpringApplication(StartBoot.class);
+
         application.setWebEnvironment(true);
 //        application.setShowBanner(true);
 
