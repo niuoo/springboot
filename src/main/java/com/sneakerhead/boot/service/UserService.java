@@ -1,6 +1,6 @@
 package com.sneakerhead.boot.service;
 
-import com.sneakerhead.boot.module.User;
+import com.sneakerhead.boot.model.User;
 
 /**
  * Created by wanghuiwu on 2016/4/16.

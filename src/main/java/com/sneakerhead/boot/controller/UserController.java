@@ -1,9 +1,7 @@
 package com.sneakerhead.boot.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.sneakerhead.boot.module.User;
+import com.sneakerhead.boot.model.User;
 import com.sneakerhead.boot.service.UserService;
-import com.sneakerhead.boot.util.redis.ByteJedisCluster;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +18,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/{id}")
-    public User getUser(@PathVariable("id")Long id){
+    @RequestMapping(method = RequestMethod.GET)
+    public User getUser(@RequestParam("id")Long id){
         return userService.getById(id);
     }
 

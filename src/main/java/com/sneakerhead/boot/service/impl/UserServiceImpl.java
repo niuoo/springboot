@@ -1,7 +1,7 @@
 package com.sneakerhead.boot.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.sneakerhead.boot.module.User;
+import com.sneakerhead.boot.model.User;
 import com.sneakerhead.boot.service.UserService;
 import com.sneakerhead.boot.util.redis.ByteJedisCluster;
 import org.springframework.beans.factory.annotation.Autowired;

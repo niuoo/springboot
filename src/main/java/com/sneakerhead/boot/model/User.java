@@ -1,4 +1,4 @@
-package com.sneakerhead.boot.module;
+package com.sneakerhead.boot.model;
 
 /**
  * Created by wanghuiwu on 2016/3/29.
